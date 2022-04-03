@@ -26,10 +26,9 @@ mengelola grup secara efisien dan mengotomatiskan beberapa hal yang membosankan.
 Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 ```
 
-## Heroku deployment
-
-<p align="center"><a href="https://github.com/Renall-ubot/CilikBot"> <img 
-src="https://img.shields.io/badge/Deploy%20To%20Bot%20Heroku-blue?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
+## Heroku Deployment
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Renall-ubot/CilikBot"> <img 
+src="https://img.shields.io/badge/Deploy%20To%20Heroku-purple?style=flat&logo=heroku" width="210" height="34.45" /></a></p>
 
 
 <p align="center"><a href="https://t.me/CilikStringBot"><img src="https://img.shields.io/badge/Generate%20String%20Session-blue?style=for-the-flat&logo=telegram" width="210" height"34.45" /</a></p>
