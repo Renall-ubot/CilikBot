@@ -20,9 +20,9 @@ jobs:
           # commit changes
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'CilikUserbot: auto fixes'
+          commit_message: 'Cilikbot: auto fixes'
           commit_options: '--no-verify --signoff'
           repository: .
-          commit_user_name: grey423
-          commit_user_email: geryandgrey@gmail.com
-          commit_author: grey423 <geryandgrey@gmail.com>
+          commit_user_name: Renall-Ubot
+          commit_user_email: rafaelajg09@gmail.com
+          commit_author: Renall-Ubot <rafaelajg09@gmail.com>
