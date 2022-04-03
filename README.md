@@ -1,9 +1,8 @@
-<h1 align="center"><img src="./resources/GeezFire.gif" width="35px">Cɪʟɪᴋ-Uꜱᴇʀʙᴏᴛ<img src="./resources/GeezFire.gif" width="35px"></h1>
+<h1 align="center"><img src="./resources/GeezFire.gif"  src="./resources/GeezFire.gif" width="35px"></h1>
 <p align="center">
-    <img alt="CILIK VERSION" src="https://img.shields.io/badge/CILIK%20VERSION-4.+-brightgreen"/>
     <img alt="BUILD IN" src="https://img.shields.io/badge/BUILD%20-Last Day-brightgreen"/>
            <a href="https://travis-ci.com/grey423/CilikUserbot.svg?branch=main" /></a>
-    <a href="https://github.com/Renall-Ubo/CiliBot/network/members"> <img src="https://img.shields.io/github/forks/grey423/CilikUserbot?logo=github&style=for-the-badge" /></a>
+    <a href="https://github.com/Renall-Ubo/CilikBot/network/members"> <img src="https://img.shields.io/github/forks/grey423/CilikUserbot?logo=github&style=for-the-badge" /></a>
     <a href="https://github.com/Renall-Ubot/CilikBot"> <img src="https://img.shields.io/github/repo-size/grey423/CilikUserbot?logo=github&style=for-the-badge" /></a>
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?label=telethon&logo=pypi&logoColor=white&style=for-the-badge" /></a>
     <img alt="PYTHON" src="https://img.shields.io/badge/PYTHON-v3.9.0-blue?style=for-the-badge&logo=appveyor"/>
