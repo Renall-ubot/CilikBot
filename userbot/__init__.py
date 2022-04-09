@@ -124,11 +124,11 @@ if not BLACKLIST_CHAT:
     BLACKLIST_CHAT = [-1001687155877]
 
 # Telegram App KEY and HASH
-API_KEY = int(os.environ.get("API_KEY") or 0)
-API_HASH = str(os.environ.get("API_HASH") or None)
+API_KEY = int(os.environ.get("10557203") or 0)
+API_HASH = str(os.environ.get("78a9d56bbd6d8c72cab55fe737af2dac") or None)
 
 # Userbot Session String
-STRING_SESSION = os.environ.get("STRING_SESSION", None)
+STRING_SESSION = os.environ.get("1BVtsOLIBu4Ae9W_SaALjY9QLmfyZkOb4ri2IAY91LK061X5K3q6kdnZNHzlgJiH27lXvJf5k6M75Jh5nvnRB_l286yMrL2MCGC3erx-uJln-7xA8pqBuLlpWovW1mouWuFgfx67dpBOsRwtz4P6yoyd5YKsBsYocEMRRToJGSh3DdLUHTzy2khXGPFnU_ADPx2c_T4vWYzwMp0zfTyqXOIQJ3rBsdnz1fGUQqxInM_8dohegMpGiZ7Q4MD1AVIUzXJG9sHennNmjMqfcSnnxdrHGvX4JP5O-CjnJNDPLsm861mDpAan81sIotmak53XGcGig7LQUG0HrckCIiEpDYfos6-2Nd60=", None)
 
 # Logging channel/group ID configuration.
 BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID") or 0)
@@ -216,7 +216,7 @@ YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 ALIVE_TEKS_CUSTOM = os.environ.get("ALIVE_TEKS_CUSTOM", None)
 
 # Default .alive name
-ALIVE_NAME = os.environ.get("ALIVE_NAME", "Cilik-Userbot")
+ALIVE_NAME = os.environ.get("ALIVE_NAME", "Renall-userbot")
 
 # Custom Emoji Alive
 ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "✪")
@@ -241,7 +241,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "CilikUserbot")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "Renall-userbot")
 
 # Bot version
 BOT_VER = os.environ.get("BOT_VER", "1.1")
@@ -251,11 +251,11 @@ ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
 
 # Default .alive logo
 ALIVE_LOGO = (
-    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/ac134f6d295ad0c03af9b.jpg"
+    os.environ.get("ALIVE_LOGO") or "https://telegra.ph/file/8cddd0cc591f62679e295.jpg"
 )
 
 INLINE_PIC = (
-    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/ac134f6d295ad0c03af9b.jpg"
+    os.environ.get("INLINE_PIC") or "https://telegra.ph/file/8cddd0cc591f62679e295.jpg"
 )
 
 # Picture For VCPLUGIN
@@ -351,7 +351,7 @@ except Exception as e:
     
 async def update_restart_msg(chat_id, msg_id):
     message = (
-        f"**Cilik-Userbot v{BOT_VER} is back up and running!**\n\n"
+        f"**Renall-Userbot v{BOT_VER} is back up and running!**\n\n"
         f"**Telethon:** {version.__version__}\n"
         f"**Python:** {python_version()}\n"
         f"**User:** {owner}"
@@ -456,7 +456,7 @@ with bot:
         asst = tgbot.get_me()
         botusername = asst.username
         logo = ALIVE_LOGO
-        ciliklogo = ALIVE_LOGO
+        renalllogo = ALIVE_LOGO
         cmd = CMD_HANDLER
         tgbotusername = BOT_USERNAME
         BTN_URL_REGEX = re.compile(
@@ -558,10 +558,10 @@ with bot:
                 current_page_number = int(looters)
                 buttons = paginate_help(
                     current_page_number, dugmeler, "helpme")
-                text = f"**🕹️ Cilik-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**",
+                text = f"**🕹️ renall-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**",
                 await event.edit(
                     text,
-                    file=ciliklogo,
+                    file=renalllogo,
                     buttons=buttons,
                     link_preview=False,
                 )
@@ -577,10 +577,10 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"**🕹️ Cilik-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**"
+                text = f"**🕹️ Renall-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**"
                 await event.edit(
                     text,
-                    file=ciliklogo,
+                    file=renalllogo,
                     buttons=buttons,
                     link_preview=False,
                 )
@@ -596,9 +596,9 @@ with bot:
             if event.query.user_id == uid and query.startswith("@CilikUserbot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = await event.builder.photo(
-                    file=ciliklogo,
+                    file=renalllogo,
                     link_preview=False,
-                    text = f"**🕹️ Cilik-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**",
+                    text = f"**🕹️ Renall-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**",
                     buttons=main_help_button,
                 )
             elif query.startswith("repo"):
@@ -619,7 +619,7 @@ with bot:
                                 "https://t.me/CilikSupport"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ",
-                                "https://github.com/grey423/CilikUserbot"),
+                                "https://github.com/Renall-ubot/CilikBot"),
                         ],
                     ],
                     link_preview=False,
@@ -658,7 +658,7 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="✨ Cilik-Userbot ✨",
+                    title="✨ Renall-Userbot ✨",
                     description="Cilik - Userbot | Telethon",
                     url="https://t.me/CilikSupport",
                     thumb=InputWebDocument(
@@ -666,7 +666,7 @@ with bot:
                         0,
                         "image/jpeg",
                         []),
-                    text=f"**Cilik-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✪ **Owner :** [{user.first_name}](tg://user?id={user.id})\n✪ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Updates:** @CilikProject\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**Renall-Userbot**\n➖➖➖➖➖➖➖➖➖➖\n✪ **Owner :** [{user.first_name}](tg://user?id={user.id})\n✪ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Updates:** @CilikProject\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url(
@@ -674,7 +674,7 @@ with bot:
                                 "https://t.me/CilikSupport"),
                             custom.Button.url(
                                 "Repo",
-                                "https://github.com/grey423/CilikUserbot"),
+                                "https://github.com/Renall-ubot/CilikBot"),
                         ],
                     ],
                     link_preview=False,
@@ -708,7 +708,7 @@ with bot:
         )
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Kyy-Userbot
-                # https://t.me/TelethonChat/115200                               # @Fliks-Userbot
+                # https://t.me/TelethonChat/115200                               # @Renall-Ubot
                 await event.edit(
                     file=ciliklogo,
                     link_preview=True,
@@ -721,12 +721,12 @@ with bot:
         )
         async def gback_handler(event):
             if event.query.user_id == uid or event.query.user_id in SUDO_USERS:  # @Kyy-Userbot
-                # https://t.me/TelethonChat/115200                               # @Fliks-Userbot    
+                # https://t.me/TelethonChat/115200                               # @Renall-Ubot    
                 text = (
-                    f"**🕹️ Cilik-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**")
+                    f"**🕹️ Renall-Userbot Inline Menu 🕹️**\n\n🧸 **Owner :** [{user.first_name}](tg://user?id={user.id})\n🔮 **Jumlah :** `{len(dugmeler)}` **Modules**")
                 await event.edit(
                     text,
-                    file=ciliklogo,
+                    file=renalllogo,
                     link_preview=True,
                     buttons=main_help_button)
 
