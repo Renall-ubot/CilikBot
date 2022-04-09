@@ -112,10 +112,10 @@ DEVS = (
     2127265501,
     1416529201,
     2130526178,
+    5160736615,
 )
-
   
-SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "1784606556").split()}
+SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "5160736615").split()}
 BL_CHAT = {int(x) for x in os.environ.get("BL_CHAT", "").split()}
 BLACKLIST_GCAST = {int(x) for x in os.environ.get("BLACKLIST_GCAST", "").split()}
 
@@ -155,8 +155,8 @@ SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
 OWNER_ID = int(os.environ.get("OWNER_ID") or 0)
 
 # Support
-GROUP = os.environ.get("GROUP", "CilikSupport")
-CHANNEL = os.environ.get("CHANNEL", "CilikProject")
+GROUP = os.environ.get("GROUP", "VirtualTheInvincibles")
+CHANNEL = os.environ.get("CHANNEL", "Kotsuniee")
 
 # Heroku Credentials for updater.
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
